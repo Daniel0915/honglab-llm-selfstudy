@@ -1,0 +1,24 @@
+# Part4 (파인튜닝) 실습 환경
+#
+# Part2/Part3 는 torch 만으로 돌아갔지만, Part4 부터는 실제 사전학습 모델을
+# 불러와야 해서 huggingface 스택이 필요합니다.
+#
+# 설치 (Python 3.11 환경 권장 - transformers 최신판이 3.9 를 버렸습니다):
+#     ../.venv311/bin/pip install -r requirements.txt
+
+torch
+numpy
+matplotlib
+
+transformers>=4.51      # Qwen3 아키텍처 지원
+tokenizers
+datasets                # 공개 지시 데이터셋 내려받기
+accelerate              # 디바이스 배치 · 혼합정밀
+
+# 챕터 8 (PEFT) 에서 필요해집니다 - 미리 깔아도 무방
+peft
+trl
+
+# 선택
+bitsandbytes            # 8bit optimizer / QLoRA (CUDA 전용, 맥에서는 설치 안 됨)
+tensorboard

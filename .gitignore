@@ -1,0 +1,34 @@
+# 가상환경
+.venv/
+.venv311/
+venv/
+env/
+
+# 파이썬
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 모델 · 데이터 (용량이 큽니다)
+*.pth
+*.pt
+*.safetensors
+*.bin
+*.gguf
+out/
+checkpoints/
+hf_cache/
+ko_wiki.txt
+*.txt.gz
+
+# 로그
+*.log
+runs/
+wandb/
+
+# OS / 에디터
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
