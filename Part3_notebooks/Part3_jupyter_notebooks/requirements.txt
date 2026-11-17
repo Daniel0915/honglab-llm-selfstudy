@@ -1,0 +1,4 @@
+# 01·04는 torch와 matplotlib, 02는 regex, 03은 셋 모두 씁니다.
+torch>=2.0
+matplotlib
+regex
